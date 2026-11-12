@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bebidas | De comida brasileira!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="pagina">
+  <header class="topo">
+    <a href="index.html" class="logo" title="Início"><span class="l-cinza">D</span><span class="l-cinza">e</span><span>&nbsp;</span><span class="l-azul">c</span><span class="l-azul">o</span><span class="l-azul">m</span><span class="l-azul">i</span><span class="l-azul">d</span><span class="l-azul">a</span><span>&nbsp;</span><span class="l-oliva">b</span><span class="l-oliva">r</span><span class="l-oliva">a</span><span class="l-amarelo">s</span><span class="l-amarelo">i</span><span class="l-amarelo">l</span><span class="l-amarelo">e</span><span class="l-verde">i</span><span class="l-verde">r</span><span class="l-verde">a</span><span class="l-verde">!</span></a>
+
+    <div class="icones-topo">
+      <button type="button" class="botao-tema" id="botaoTema" title="Mudar entre modo claro e escuro">
+        <img src="img/sol.png" alt="Modo claro">
+        <span class="bolinha"></span>
+        <img src="img/lua.png" alt="Modo escuro">
+      </button>
+      <a href="carrinho.html" class="link-carrinho" title="Carrinho">
+        <img src="img/carrinho.png" alt="Carrinho" class="icone-topo icone-preto">
+        <span class="contador" id="contadorCarrinho">0</span>
+      </a>
+      <a href="perfil.html" title="Perfil">
+        <img src="img/usuario-circulo.png" alt="Perfil" class="icone-topo icone-preto">
+      </a>
+    </div>
+
+    <nav class="menu">
+      <a href="index.html" class="menu-verde">Início</a>
+      <a href="cadastro.html" class="menu-verde menu-cadastro">Cadastro</a>
+      <a href="login.html" class="menu-amarelo">Login</a>
+      <a href="comidas.html" class="menu-azul">Refeições</a>
+      <a href="bebidas.html" class="menu-azul">Bebidas</a>
+    </nav>
+  </header>
+
+  <main class="conteudo">
+    <section class="caixa-bebidas">
+      <div class="interno-bebidas">
+        <h2 class="titulo-bebidas">BEBIDAS</h2>
+        <div class="busca">
+          <span class="lupa"></span>
+          <input type="text" id="campoBusca" placeholder="Escreva refeições..." maxlength="40">
+        </div>
+        <div class="grade-bebidas" id="gradeBebidas">
+          <div class="bebida" data-nome="Laranja Refresco">
+            <p class="nome-item">Laranja Refresco</p>
+            <div class="foto-item">
+              <button type="button" class="botao-mais" data-nome="Laranja Refresco" data-preco="1.60" title="Adicionar">+</button>
+              <img src="img/bebidas/laranja-refresco.png" alt="Laranja Refresco">
+              <button type="button" class="botao-menos" data-nome="Laranja Refresco" title="Remover">&minus;</button>
+            </div>
+            <p class="preco">1.60</p>
+          </div>
+          <div class="bebida" data-nome="Laranja Refrigerante">
+            <p class="nome-item">Laranja Refrigerante</p>
+            <div class="foto-item">
+              <button type="button" class="botao-mais" data-nome="Laranja Refrigerante" data-preco="6.90" title="Adicionar">+</button>
+              <img src="img/bebidas/fanta.png" alt="Laranja Refrigerante">
+              <button type="button" class="botao-menos" data-nome="Laranja Refrigerante" title="Remover">&minus;</button>
+            </div>
+            <p class="preco">6.90</p>
+          </div>
+          <div class="bebida" data-nome="Abacaxi Refresco">
+            <p class="nome-item">Abacaxi Refresco</p>
+            <div class="foto-item">
+              <button type="button" class="botao-mais" data-nome="Abacaxi Refresco" data-preco="1.60" title="Adicionar">+</button>
+              <img src="img/bebidas/abacaxi-refresco.png" alt="Abacaxi Refresco">
+              <button type="button" class="botao-menos" data-nome="Abacaxi Refresco" title="Remover">&minus;</button>
+            </div>
+            <p class="preco">1.60</p>
+          </div>
+          <div class="bebida" data-nome="Suco de morango">
+            <p class="nome-item">Suco de morango</p>
+            <div class="foto-item">
+              <button type="button" class="botao-mais" data-nome="Suco de morango" data-preco="1.60" title="Adicionar">+</button>
+              <img src="img/bebidas/suco-morango.png" alt="Suco de morango">
+              <button type="button" class="botao-menos" data-nome="Suco de morango" title="Remover">&minus;</button>
+            </div>
+            <p class="preco">1.60</p>
+          </div>
+          <div class="bebida" data-nome="Skol">
+            <p class="nome-item">Skol</p>
+            <div class="foto-item">
+              <button type="button" class="botao-mais" data-nome="Skol" data-preco="4.10" title="Adicionar">+</button>
+              <img src="img/bebidas/skol.png" alt="Skol">
+              <button type="button" class="botao-menos" data-nome="Skol" title="Remover">&minus;</button>
+            </div>
+            <p class="preco">4.10</p>
+          </div>
+          <div class="bebida" data-nome="Pepsi">
+            <p class="nome-item normal">Pepsi</p>
+            <div class="foto-item">
+              <button type="button" class="botao-mais" data-nome="Pepsi" data-preco="6.90" title="Adicionar">+</button>
+              <img src="img/bebidas/pepsi.png" alt="Pepsi">
+              <button type="button" class="botao-menos" data-nome="Pepsi" title="Remover">&minus;</button>
+            </div>
+            <p class="preco">6.90</p>
+          </div>
+          <div class="bebida" data-nome="Sprite">
+            <p class="nome-item normal">Sprite</p>
+            <div class="foto-item">
+              <button type="button" class="botao-mais" data-nome="Sprite" data-preco="6.90" title="Adicionar">+</button>
+              <img src="img/bebidas/sprite.png" alt="Sprite">
+              <button type="button" class="botao-menos" data-nome="Sprite" title="Remover">&minus;</button>
+            </div>
+            <p class="preco">6.90</p>
+          </div>
+          <div class="bebida" data-nome="Guaraná">
+            <p class="nome-item normal">Guaraná</p>
+            <div class="foto-item">
+              <button type="button" class="botao-mais" data-nome="Guaraná" data-preco="6.90" title="Adicionar">+</button>
+              <img src="img/bebidas/guarana.png" alt="Guaraná">
+              <button type="button" class="botao-menos" data-nome="Guaraná" title="Remover">&minus;</button>
+            </div>
+            <p class="preco">6.90</p>
+          </div>
+          <div class="bebida" data-nome="Coca-Cola">
+            <p class="nome-item normal">Coca-Cola</p>
+            <div class="foto-item">
+              <button type="button" class="botao-mais" data-nome="Coca-Cola" data-preco="7.90" title="Adicionar">+</button>
+              <img src="img/bebidas/coca-cola.png" alt="Coca-Cola">
+              <button type="button" class="botao-menos" data-nome="Coca-Cola" title="Remover">&minus;</button>
+            </div>
+            <p class="preco">7.90</p>
+          </div>
+          <div class="bebida" data-nome="Red Bull">
+            <p class="nome-item normal">Red Bull</p>
+            <div class="foto-item">
+              <button type="button" class="botao-mais" data-nome="Red Bull" data-preco="5.90" title="Adicionar">+</button>
+              <img src="img/bebidas/red-bull.png" alt="Red Bull">
+              <button type="button" class="botao-menos" data-nome="Red Bull" title="Remover">&minus;</button>
+            </div>
+            <p class="preco">5.90</p>
+          </div>
+          <div class="bebida" data-nome="Brahma">
+            <p class="nome-item normal">Brahma</p>
+            <div class="foto-item">
+              <button type="button" class="botao-mais" data-nome="Brahma" data-preco="4.10" title="Adicionar">+</button>
+              <img src="img/bebidas/brahma.png" alt="Brahma">
+              <button type="button" class="botao-menos" data-nome="Brahma" title="Remover">&minus;</button>
+            </div>
+            <p class="preco">4.10</p>
+          </div>
+          <div class="bebida" data-nome="Mate Couro">
+            <p class="nome-item normal">Mate Couro</p>
+            <div class="foto-item">
+              <button type="button" class="botao-mais" data-nome="Mate Couro" data-preco="7.90" title="Adicionar">+</button>
+              <img src="img/bebidas/mate-couro.png" alt="Mate Couro">
+              <button type="button" class="botao-menos" data-nome="Mate Couro" title="Remover">&minus;</button>
+            </div>
+            <p class="preco">7.90</p>
+          </div>
+          <div class="bebida" data-nome="Sukita">
+            <p class="nome-item normal">Sukita</p>
+            <div class="foto-item">
+              <button type="button" class="botao-mais" data-nome="Sukita" data-preco="7.90" title="Adicionar">+</button>
+              <img src="img/bebidas/sukita.png" alt="Sukita">
+              <button type="button" class="botao-menos" data-nome="Sukita" title="Remover">&minus;</button>
+            </div>
+            <p class="preco">7.90</p>
+          </div>
+          <div class="bebida" data-nome="Monster">
+            <p class="nome-item normal">Monster</p>
+            <div class="foto-item">
+              <button type="button" class="botao-mais" data-nome="Monster" data-preco="5.90" title="Adicionar">+</button>
+              <img src="img/bebidas/monster.png" alt="Monster">
+              <button type="button" class="botao-menos" data-nome="Monster" title="Remover">&minus;</button>
+            </div>
+            <p class="preco">5.90</p>
+          </div>
+        </div>
+        <p class="sem-resultado" id="semResultado">Nenhuma bebida encontrada.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="rodape-info">
+      <p class="rodape-nome"><span class="txt-verde">De</span> <span class="txt-amarelo">comida</span> <span class="txt-azul">brasileira!</span></p>
+      <p class="rodape-email">Email: decomidabrasileira@gmail.com</p>
+      <p class="rodape-rede"><img src="img/instagram.png" alt="Instagram" class="icone-preto"> <span class="txt-amarelo">@decomidabrasileira</span></p>
+      <p class="rodape-rede"><img src="img/whatsapp.png" alt="WhatsApp" class="icone-preto"> <span class="txt-azul">(31) 9.71812140</span></p>
+    </div>
+    <p class="direitos">Todos os direitos reservados</p>
+  </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

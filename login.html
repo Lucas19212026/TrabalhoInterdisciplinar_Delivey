@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | De comida brasileira!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="pagina">
+  <header class="topo">
+    <a href="index.html" class="logo" title="Início"><span class="l-cinza">D</span><span class="l-cinza">e</span><span>&nbsp;</span><span class="l-azul">c</span><span class="l-azul">o</span><span class="l-azul">m</span><span class="l-azul">i</span><span class="l-azul">d</span><span class="l-azul">a</span><span>&nbsp;</span><span class="l-oliva">b</span><span class="l-oliva">r</span><span class="l-oliva">a</span><span class="l-amarelo">s</span><span class="l-amarelo">i</span><span class="l-amarelo">l</span><span class="l-amarelo">e</span><span class="l-verde">i</span><span class="l-verde">r</span><span class="l-verde">a</span><span class="l-verde">!</span></a>
+
+    <div class="icones-topo">
+      <button type="button" class="botao-tema" id="botaoTema" title="Mudar entre modo claro e escuro">
+        <img src="img/sol.png" alt="Modo claro">
+        <span class="bolinha"></span>
+        <img src="img/lua.png" alt="Modo escuro">
+      </button>
+      <a href="carrinho.html" class="link-carrinho" title="Carrinho">
+        <img src="img/carrinho.png" alt="Carrinho" class="icone-topo icone-preto">
+        <span class="contador" id="contadorCarrinho">0</span>
+      </a>
+      <a href="perfil.html" title="Perfil">
+        <img src="img/usuario-circulo.png" alt="Perfil" class="icone-topo icone-preto">
+      </a>
+    </div>
+
+    <nav class="menu">
+      <a href="index.html" class="menu-verde">Início</a>
+      <a href="cadastro.html" class="menu-verde menu-cadastro">Cadastro</a>
+      <a href="login.html" class="menu-amarelo">Login</a>
+      <a href="comidas.html" class="menu-azul">Refeições</a>
+      <a href="bebidas.html" class="menu-azul">Bebidas</a>
+    </nav>
+  </header>
+
+  <main class="conteudo">
+    <section class="caixa-borda caixa-cadastro caixa-login">
+      <h2 class="titulo-caixa">ENTRAR NA CONTA</h2>
+      <form class="formulario formulario-login" id="formLogin" novalidate>
+        <div class="coluna-form">
+        <label class="campo" for="loginEmail">
+          <span>Email:</span>
+          <input type="text" id="loginEmail" data-mascara="email" maxlength="60" autocomplete="email" inputmode="email">
+        </label>
+        <label class="campo" for="loginSenha">
+          <span>Senha:</span>
+          <input type="password" id="loginSenha" maxlength="20" autocomplete="current-password">
+        </label>
+          <button type="submit" class="botao-branco">Entrar</button>
+        </div>
+        <div class="coluna-form">
+        <button type="button" class="botao-social" data-aviso="sim">
+          <img src="img/google.png" alt="Google" class="icone-preto">
+          <span>Entrar pelo Google</span>
+        </button>
+        <button type="button" class="botao-social" data-aviso="sim">
+          <img src="img/usuario.png" alt="Outra conta" class="icone-preto">
+          <span>Conectar por outra conta</span>
+        </button>
+          <a href="cadastro.html" class="link-cadastro">Ainda não tem conta? Cadastre-se</a>
+        </div>
+        <p class="mensagem" id="mensagem"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="rodape-info">
+      <p class="rodape-nome"><span class="txt-verde">De</span> <span class="txt-amarelo">comida</span> <span class="txt-azul">brasileira!</span></p>
+      <p class="rodape-email">Email: decomidabrasileira@gmail.com</p>
+      <p class="rodape-rede"><img src="img/instagram.png" alt="Instagram" class="icone-preto"> <span class="txt-amarelo">@decomidabrasileira</span></p>
+      <p class="rodape-rede"><img src="img/whatsapp.png" alt="WhatsApp" class="icone-preto"> <span class="txt-azul">(31) 9.71812140</span></p>
+    </div>
+    <p class="direitos">Todos os direitos reservados</p>
+  </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
